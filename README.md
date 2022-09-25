@@ -2,7 +2,7 @@
 
 You can download VAC tool here: https://www.southampton.ac.uk/~gp1y10/VAC.html <br />
 In the policy file you can find our case study for a smart home environment. <br />
-To repeat the experiments results you can use the policyVACquery files.<br />
+To repeat the results of the experiments you can use the policyVACquery files.<br />
 
 policyVACquery1 file tests if a kid is able to access the adult controlled devices; <br />
 policyVACquery2 file checks whether a guest can control the owner's devices; <br />
