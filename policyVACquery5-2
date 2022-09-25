@@ -1,0 +1,209 @@
+ROLES 
+HomeOwner TeenagerDevicesManager Manager AdultManager EntertainmentManager CleaningManager KitchenManager KidsManager
+R_parentAnyTime R_parentNotAtHome R_kidEntertainmentTime R_kidAtHome R_chefAtHome  R_authoritiesEmergencyTime R_neighborAtHome R_teenagerAnyTime R_babySitterWednesday R_adultAnyTime R_babySitterFriday R_maidAtHome R_guestAtHome R_teenagerEntertainmentTime R_managerAnyTime
+EntertainmentDevices AdultControlled OwnerControlled KidsFriendlyContent
+OvenDevice DoorDevice FridgeDevice ThermostatDevice LightingDevices KitchenDevices
+CleaningDevices TeenagerControlled PlayStationDevice SafeDevice GarageDevice
+ComputerDevice ClockDevice FitnessDevices WindowsDevices
+target Admin
+;
+
+USERS 
+user0 U_parentAnyTime U_parentNotAtHome U_kidEntertainmentTime U_chefAtHome U_guestAtHome U_authoritiesEmergencyTime U_neighborAtHome U_teenagerAnyTime U_kidAtHome U_babySitterFriday U_managerAnyTime U_adultAnyTime U_teenagerEntertainmentTime U_babySitterWednesday U_maidAtHome
+;
+
+ADMIN 
+user0 U_parentAnyTime U_teenagerAnyTime U_maidAtHome U_babySitterFriday U_maidAtHome U_chefAtHome U_managerAnyTime U_adultAnyTime
+;
+
+UA 
+<user0,Admin> <U_managerAnyTime,Manager> <U_parentAnyTime,HomeOwner> <U_adultAnyTime,AdultManager> <U_teenagerAnyTime,TeenagerDevicesManager> <U_parentAnyTime,EntertainmentManager> <U_adultAnyTime,R_adultAnyTime> <U_maidAtHome,CleaningManager> <U_chefAtHome,KitchenManager> <U_managerAnyTime,R_managerAnyTime> <U_parentAnyTime,R_parentAnyTime> <U_kidAtHome,R_kidAtHome> <U_babySitterFriday,KidsManager> <U_kidEntertainmentTime,R_kidEntertainmentTime> <U_babySitterFriday,R_babySitterFriday> <U_babySitterWednesday,R_babySitterWednesday> <U_maidAtHome,R_maidAtHome> <U_guestAtHome,R_guestAtHome> <U_neighborAtHome,R_neighborAtHome> <U_authoritiesEmergencyTime,R_authoritiesEmergencyTime>
+;
+
+CR 
+<Manager,AdultControlled>
+<Manager,OwnerControlled>
+<Manager,DoorDevice>
+<Manager,FridgeDevice> 
+<Manager,OvenDevice> 
+<Manager,EntertainmentDevices> 
+<Manager,WindowsDevices>
+<Manager,SafeDevice> 
+<Manager,KidsFriendlyContent>
+<Manager,LightingDevices> 
+<Manager,CleaningDevices> 
+<Manager,TeenagerControlled>
+<Manager,ThermostatDevice> 
+<Manager,PlayStationDevice> 
+<Manager,ComputerDevice>
+<Manager,ClockDevice> 
+<Manager,FitnessDevices> 
+<Manager,KitchenDevices>
+<Manager,GarageDevice>
+<HomeOwner,OwnerControlled>
+<HomeOwner,SafeDevice>
+<AdultManager,AdultControlled>
+<AdultManager,DoorDevice>
+<AdultManager,FridgeDevice> 
+<AdultManager,OvenDevice> 
+<AdultManager,WindowsDevices>
+<AdultManager,LightingDevices> 
+<AdultManager,CleaningDevices>
+<AdultManager,ThermostatDevice> 
+<AdultManager,ComputerDevice>
+<AdultManager,ClockDevice> 
+<AdultManager,FitnessDevices>
+<AdultManager,GarageDevice>
+<EntertainmentManager, EntertainmentDevices>
+<EntertainmentManager, KidsFriendlyContent>
+<EntertainmentManager, PlayStationDevice>
+<TeenagerDevicesManager, TeenagerControlled>
+<TeenagerDevicesManager, PlayStationDevice>
+<CleaningManager,CleaningDevices>
+<CleaningManager,GarageDevice>
+<CleaningManager,WindowsDevices>
+<KitchenManager,LightingDevices>
+<KitchenManager,KitchenDevices>
+<KidsManager,KidsFriendlyContent>
+;
+
+CA 
+<Admin, R_guestAtHome&KidsFriendlyContent, target>
+<Manager, R_parentAnyTime, AdultControlled>
+<Manager, R_parentAnyTime, OwnerControlled>
+<Manager, R_parentNotAtHome, OwnerControlled>
+<Manager, R_parentAnyTime, DoorDevice>
+<Manager, R_parentAnyTime, FridgeDevice>
+<Manager, R_parentAnyTime, OvenDevice>
+<Manager, R_parentAnyTime, EntertainmentDevices>
+<Manager, R_parentAnyTime, WindowsDevices>
+<Manager, R_parentAnyTime, SafeDevice>
+<Manager, R_parentAnyTime, KidsFriendlyContent>
+<Manager, R_parentAnyTime, LightingDevices>
+<Manager, R_parentAnyTime, CleaningDevices>
+<Manager, R_parentAnyTime, PlayStationDevice>
+<Manager, R_parentAnyTime, FitnessDevices>
+<Manager, R_parentAnyTime, ThermostatDevice>
+<Manager, R_parentAnyTime, ComputerDevice>
+<Manager, R_parentAnyTime, ClockDevice>
+
+<Manager, R_teenagerAnyTime, TeenagerControlled>
+<Manager, R_teenagerEntertainmentTime, EntertainmentDevices>
+<Manager, R_teenagerEntertainmentTime, PlayStationDevice>
+<Manager, R_teenagerAnyTime, AdultControlled>
+<Manager, R_teenagerAnyTime, LightingDevices>
+<Manager, R_teenagerAnyTime, FitnessDevices>
+
+<Manager, R_adultAnyTime, AdultControlled>
+
+<Manager, R_chefAtHome&DoorDevice, KitchenDevices>
+<Manager, R_chefAtHome, DoorDevice>
+<Manager, R_chefAtHome&DoorDevice, LightingDevices>
+
+<Manager, R_kidEntertainmentTime&-EntertainmentDevices, KidsFriendlyContent>
+<Manager, R_kidAtHome, LightingDevices>
+
+<Manager, R_babySitterFriday&-AdultControlled, DoorDevice>
+<Manager, R_babySitterFriday&DoorDevice, LightingDevices>
+<Manager, R_babySitterFriday&LightingDevices&-AdultControlled, WindowsDevices>
+<Manager, R_babySitterFriday&LightingDevices&-AdultControlled, ThermostatDevice>
+<Manager, R_babySitterFriday&DoorDevice&WindowsDevices&ThermostatDevice, AdultControlled>
+<Manager, R_babySitterFriday&LightingDevices, KidsFriendlyContent>
+<Manager, R_babySitterWednesday&-AdultControlled, DoorDevice>
+<Manager, R_babySitterWednesday&DoorDevice, LightingDevices>
+<Manager, R_babySitterWednesday&LightingDevices&-AdultControlled, WindowsDevices>
+<Manager, R_babySitterWednesday&LightingDevices&-AdultControlled, ThermostatDevice>
+<Manager, R_babySitterWednesday&LightingDevices, KidsFriendlyContent>
+
+<Manager, R_maidAtHome, DoorDevice>
+<Manager, R_maidAtHome, WindowsDevices>
+<Manager, R_maidAtHome&DoorDevice, LightingDevices>
+<Manager, R_maidAtHome&DoorDevice&LightingDevices, CleaningDevices>
+<Manager, R_maidAtHome&CleaningDevices, FridgeDevice>
+<Manager, R_maidAtHome&DoorDevice&LightingDevices, ThermostatDevice>
+<Manager, R_maidAtHome&CleaningDevices, GarageDevice>
+
+<Manager, R_guestAtHome, DoorDevice>
+<Manager, R_guestAtHome&DoorDevice, LightingDevices>
+<Manager, R_guestAtHome&LightingDevices, EntertainmentDevices>
+<Manager, R_guestAtHome&DoorDevice, PlayStationDevice>
+
+<Manager, R_neighborAtHome, DoorDevice>
+<Manager, R_neighborAtHome&DoorDevice, LightingDevices>
+
+<Manager, R_authoritiesEmergencyTime, DoorDevice>
+<Manager, R_authoritiesEmergencyTime, WindowsDevices>
+<Manager, R_authoritiesEmergencyTime&DoorDevice&WindowsDevices, OwnerControlled>
+
+<HomeOwner, R_parentAnyTime, OwnerControlled>
+<HomeOwner, R_parentNotAtHome, OwnerControlled>
+<HomeOwner, R_parentAnyTime, SafeDevice>
+
+<AdultManager, R_parentAnyTime, AdultControlled>
+<AdultManager, R_parentAnyTime, DoorDevice>
+<AdultManager, R_parentAnyTime, FridgeDevice>
+<AdultManager, R_parentAnyTime, OvenDevice>
+<AdultManager, R_parentAnyTime, WindowsDevices>
+<AdultManager, R_parentAnyTime, LightingDevices>
+<AdultManager, R_parentAnyTime, CleaningDevices>
+<AdultManager, R_parentAnyTime, FitnessDevices>
+<AdultManager, R_parentAnyTime, ThermostatDevice>
+<AdultManager, R_parentAnyTime, ComputerDevice>
+<AdultManager, R_parentAnyTime, ClockDevice>
+<AdultManager, R_chefAtHome, DoorDevice>
+<AdultManager, R_chefAtHome&DoorDevice, LightingDevices>
+<AdultManager, R_kidAtHome, LightingDevices>
+<AdultManager, R_babySitterFriday&-AdultControlled, DoorDevice>
+<AdultManager, R_babySitterFriday&DoorDevice, LightingDevices>
+<AdultManager, R_babySitterFriday&LightingDevices&-AdultControlled, WindowsDevices>
+<AdultManager, R_babySitterFriday&LightingDevices&-AdultControlled, ThermostatDevice>
+<AdultManager, R_babySitterFriday&DoorDevice&WindowsDevices&ThermostatDevice, AdultControlled>
+<AdultManager, R_babySitterWednesday&-AdultControlled, DoorDevice>
+<AdultManager, R_babySitterWednesday&DoorDevice, LightingDevices>
+<AdultManager, R_babySitterWednesday&LightingDevices&-AdultControlled, WindowsDevices>
+<AdultManager, R_babySitterWednesday&LightingDevices&-AdultControlled, ThermostatDevice>
+<AdultManager, R_maidAtHome, DoorDevice>
+<AdultManager, R_maidAtHome, WindowsDevices>
+<AdultManager, R_maidAtHome&DoorDevice, LightingDevices>
+<AdultManager, R_maidAtHome&DoorDevice&LightingDevices, CleaningDevices>
+<AdultManager, R_maidAtHome&CleaningDevices, FridgeDevice>
+<AdultManager, R_maidAtHome&DoorDevice&LightingDevices, ThermostatDevice>
+<AdultManager, R_maidAtHome&CleaningDevices, GarageDevice>
+<AdultManager, R_guestAtHome, DoorDevice>
+<AdultManager, R_guestAtHome&DoorDevice, LightingDevices>
+<AdultManager, R_neighborAtHome, DoorDevice>
+<AdultManager, R_neighborAtHome&DoorDevice, LightingDevices>
+<AdultManager, R_authoritiesEmergencyTime, DoorDevice>
+<AdultManager, R_authoritiesEmergencyTime, WindowsDevices>
+<AdultManager, R_authoritiesEmergencyTime&DoorDevice&WindowsDevices, OwnerControlled>
+<AdultManager, R_teenagerAnyTime, AdultControlled>
+<AdultManager, R_teenagerAnyTime, LightingDevices>
+<AdultManager, R_teenagerAnyTime, FitnessDevices>
+
+<EntertainmentManager, R_parentAnyTime, EntertainmentDevices>
+<EntertainmentManager, R_parentAnyTime, KidsFriendlyContent>
+<EntertainmentManager, R_parentAnyTime, PlayStationDevice>
+<EntertainmentManager, R_kidEntertainmentTime&-EntertainmentDevices, KidsFriendlyContent>
+<EntertainmentManager, R_babySitterFriday&LightingDevices, EntertainmentDevices>
+<EntertainmentManager, R_babySitterWednesday&LightingDevices, EntertainmentDevices>
+<EntertainmentManager, R_guestAtHome&LightingDevices, EntertainmentDevices>
+<EntertainmentManager, R_teenagerEntertainmentTime, EntertainmentDevices>
+<EntertainmentManager, R_teenagerEntertainmentTime, PlayStationDevice>
+
+<TeenagerDevicesManager, R_teenagerAnyTime, TeenagerControlled>
+<TeenagerDevicesManager, R_teenagerEntertainmentTime, PlayStationDevice>
+<TeenagerDevicesManager, R_guestAtHome&DoorDevice, PlayStationDevice>
+
+<CleaningManager, R_maidAtHome&DoorDevice&LightingDevices,CleaningDevices>
+<CleaningManager, R_maidAtHome&CleaningDevices, GarageDevice>
+<CleaningManager, R_maidAtHome&CleaningDevices,WindowsDevices>
+
+<KitchenManager, R_chefAtHome&DoorDevice, KitchenDevices>
+<KitchenManager, R_chefAtHome, LightingDevices>
+
+<KidsManager, R_babySitterWednesday&LightingDevices, KidsFriendlyContent>
+<KidsManager, R_babySitterFriday&LightingDevices, KidsFriendlyContent>
+;
+
+
+SPEC target;
