@@ -1,0 +1,38 @@
+ROLES 
+Admin
+r_parentAnyTime r_kidEntertainmentTime r_babySitterWednesday r_babySitterFriday r_maidAtHome r_guestAtHome
+r_EntertainmentDevices r_AdultControlled r_OwnerControlled r_KidsFriendlyContent r_DoorDevice r_LightingDevices r_CleaningDevices
+target
+;
+
+USERS 
+admin u_parentAnyTime u_kidEntertainmentTime u_guestAtHome u_babySitterFriday u_babySitterWednesday u_maidAtHome
+;
+
+ADMIN 
+admin
+;
+
+UA 
+<admin,Admin> <u_parentAnyTime,r_OwnerControlled> <u_parentAnyTime,r_parentAnyTime> <u_kidEntertainmentTime,r_kidEntertainmentTime> <u_babySitterFriday,r_babySitterFriday> <u_babySitterWednesday,r_babySitterWednesday> <u_maidAtHome,r_maidAtHome> <u_guestAtHome,r_guestAtHome> 
+;
+
+CR 
+<Admin,r_OwnerControlled>
+<Admin,r_DoorDevice>
+<Admin,r_KidsFriendlyContent>
+<Admin,r_LightingDevices> 
+<Admin,r_CleaningDevices> 
+;
+
+CA 
+<Admin, r_guestAtHome&r_OwnerControlled, target>
+<Admin, r_babySitterFriday&-r_AdultControlled, r_DoorDevice>
+<Admin, r_parentAnyTime, r_AdultControlled>
+<Admin, r_guestAtHome&r_DoorDevice, r_LightingDevices>
+<Admin, r_kidEntertainmentTime&-r_EntertainmentDevices, r_KidsFriendlyContent>
+<Admin, r_babySitterWednesday&r_LightingDevices, r_KidsFriendlyContent>
+<Admin, r_maidAtHome&r_DoorDevice&r_LightingDevices, r_CleaningDevices>
+;
+
+SPEC target;
