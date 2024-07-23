@@ -1,0 +1,19 @@
+Counter Example Trace:
+Specification of query: Can uGuest2Atoffice REACH target ?
+
+==> Step 1:
+Target User: uGuest2Atoffice
+CAN ASSIGN rule applied to uGuest2Atoffice: <Admin,rGuest2Atoffice,rCommonDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uGuest2Atoffice before applying rule: rGuest2Atoffice
+Role configuration of uGuest2Atoffice after applying rule: rGuest2Atoffice rCommonDevice
+
+==> Step 2:
+Target User: uGuest2Atoffice
+CAN ASSIGN rule applied to uGuest2Atoffice: <Admin,rGuest2Atoffice&rCommonDevice,target>
+Administrative user to invoke the rule: admin
+Role configuration of uGuest2Atoffice before applying rule: rGuest2Atoffice rCommonDevice
+Role configuration of uGuest2Atoffice after applying rule: rGuest2Atoffice rCommonDevice target
+
+uGuest2Atoffice can REACH target
+target is REACHABLE

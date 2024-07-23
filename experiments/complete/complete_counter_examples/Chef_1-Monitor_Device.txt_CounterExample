@@ -1,0 +1,75 @@
+Counter Example Trace:
+Specification of query: Can uChef1Atoffice REACH target ?
+
+==> Step 1:
+Target User: uChef1Atoffice
+CAN ASSIGN rule applied to uChef1Atoffice: <Admin,rChef1Atoffice,rCommonDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uChef1Atoffice before applying rule: rChef1Atoffice
+Role configuration of uChef1Atoffice after applying rule: rChef1Atoffice rCommonDevice
+
+==> Step 2:
+Target User: uChef1Atoffice
+CAN ASSIGN rule applied to uChef1Atoffice: <Admin,rChef1Atoffice&rCommonDevice,rDoorDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uChef1Atoffice before applying rule: rChef1Atoffice rCommonDevice
+Role configuration of uChef1Atoffice after applying rule: rChef1Atoffice rCommonDevice rDoorDevice
+
+==> Step 3:
+Target User: uChef1Atoffice
+CAN ASSIGN rule applied to uChef1Atoffice: <Admin,rChef1Atoffice&rCommonDevice,rWifiDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uChef1Atoffice before applying rule: rChef1Atoffice rCommonDevice rDoorDevice
+Role configuration of uChef1Atoffice after applying rule: rChef1Atoffice rCommonDevice rDoorDevice rWifiDevice
+
+==> Step 4:
+Target User: uChef1Atoffice
+CAN ASSIGN rule applied to uChef1Atoffice: <Admin,rChef1Atoffice&rCommonDevice,rLightingDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uChef1Atoffice before applying rule: rChef1Atoffice rCommonDevice rDoorDevice rWifiDevice
+Role configuration of uChef1Atoffice after applying rule: rChef1Atoffice rCommonDevice rDoorDevice rWifiDevice rLightingDevice
+
+==> Step 5:
+Target User: uChef1Atoffice
+CAN ASSIGN rule applied to uChef1Atoffice: <Admin,rChef1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice,rMonitorDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uChef1Atoffice before applying rule: rChef1Atoffice rCommonDevice rDoorDevice rWifiDevice rLightingDevice
+Role configuration of uChef1Atoffice after applying rule: rChef1Atoffice rCommonDevice rDoorDevice rWifiDevice rLightingDevice rMonitorDevice
+
+==> Step 6:
+Target User: uChef1Atoffice
+CAN REVOKE rule applied to uChef1Atoffice: <Admin,rDoorDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uChef1Atoffice before applying rule: rChef1Atoffice rCommonDevice rDoorDevice rWifiDevice rLightingDevice rMonitorDevice
+Role configuration of uChef1Atoffice after applying rule: rChef1Atoffice rCommonDevice rWifiDevice rLightingDevice rMonitorDevice
+
+==> Step 7:
+Target User: uChef1Atoffice
+CAN REVOKE rule applied to uChef1Atoffice: <Admin,rWifiDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uChef1Atoffice before applying rule: rChef1Atoffice rCommonDevice rWifiDevice rLightingDevice rMonitorDevice
+Role configuration of uChef1Atoffice after applying rule: rChef1Atoffice rCommonDevice rLightingDevice rMonitorDevice
+
+==> Step 8:
+Target User: uChef1Atoffice
+CAN REVOKE rule applied to uChef1Atoffice: <Admin,rLightingDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uChef1Atoffice before applying rule: rChef1Atoffice rCommonDevice rLightingDevice rMonitorDevice
+Role configuration of uChef1Atoffice after applying rule: rChef1Atoffice rCommonDevice rMonitorDevice
+
+==> Step 9:
+Target User: uChef1Atoffice
+CAN REVOKE rule applied to uChef1Atoffice: <Admin,rCommonDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uChef1Atoffice before applying rule: rChef1Atoffice rCommonDevice rMonitorDevice
+Role configuration of uChef1Atoffice after applying rule: rChef1Atoffice rMonitorDevice
+
+==> Step 10:
+Target User: uChef1Atoffice
+CAN ASSIGN rule applied to uChef1Atoffice: <Admin,rChef1Atoffice&rMonitorDevice,target>
+Administrative user to invoke the rule: admin
+Role configuration of uChef1Atoffice before applying rule: rChef1Atoffice rMonitorDevice
+Role configuration of uChef1Atoffice after applying rule: rChef1Atoffice rMonitorDevice target
+
+uChef1Atoffice can REACH target
+target is REACHABLE

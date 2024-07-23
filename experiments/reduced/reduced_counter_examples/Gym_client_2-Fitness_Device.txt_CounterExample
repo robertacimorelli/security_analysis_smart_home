@@ -1,0 +1,47 @@
+Counter Example Trace:
+Specification of query: Can uGymclient2Atoffice REACH target ?
+
+==> Step 1:
+Target User: uGymclient2Atoffice
+CAN ASSIGN rule applied to uGymclient2Atoffice: <Admin,rGymclient2Atoffice,rCommonDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uGymclient2Atoffice before applying rule: rGymclient2Atoffice
+Role configuration of uGymclient2Atoffice after applying rule: rGymclient2Atoffice rCommonDevice
+
+==> Step 2:
+Target User: uGymclient2Atoffice
+CAN ASSIGN rule applied to uGymclient2Atoffice: <Admin,rGymclient2Atoffice&rCommonDevice,rLightingDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uGymclient2Atoffice before applying rule: rGymclient2Atoffice rCommonDevice
+Role configuration of uGymclient2Atoffice after applying rule: rGymclient2Atoffice rCommonDevice rLightingDevice
+
+==> Step 3:
+Target User: uGymclient2Atoffice
+CAN ASSIGN rule applied to uGymclient2Atoffice: <Admin,rGymclient2Atoffice&rCommonDevice,rWifiDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uGymclient2Atoffice before applying rule: rGymclient2Atoffice rCommonDevice rLightingDevice
+Role configuration of uGymclient2Atoffice after applying rule: rGymclient2Atoffice rCommonDevice rLightingDevice rWifiDevice
+
+==> Step 4:
+Target User: uGymclient2Atoffice
+CAN ASSIGN rule applied to uGymclient2Atoffice: <Admin,rGymclient2Atoffice&rCommonDevice,rDoorDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uGymclient2Atoffice before applying rule: rGymclient2Atoffice rCommonDevice rLightingDevice rWifiDevice
+Role configuration of uGymclient2Atoffice after applying rule: rGymclient2Atoffice rCommonDevice rLightingDevice rWifiDevice rDoorDevice
+
+==> Step 5:
+Target User: uGymclient2Atoffice
+CAN ASSIGN rule applied to uGymclient2Atoffice: <Admin,rGymclient2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice,rFitnessDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uGymclient2Atoffice before applying rule: rGymclient2Atoffice rCommonDevice rLightingDevice rWifiDevice rDoorDevice
+Role configuration of uGymclient2Atoffice after applying rule: rGymclient2Atoffice rCommonDevice rLightingDevice rWifiDevice rDoorDevice rFitnessDevice
+
+==> Step 6:
+Target User: uGymclient2Atoffice
+CAN ASSIGN rule applied to uGymclient2Atoffice: <Admin,rGymclient2Atoffice&rFitnessDevice,target>
+Administrative user to invoke the rule: admin
+Role configuration of uGymclient2Atoffice before applying rule: rGymclient2Atoffice rCommonDevice rLightingDevice rWifiDevice rDoorDevice rFitnessDevice
+Role configuration of uGymclient2Atoffice after applying rule: rGymclient2Atoffice rCommonDevice rLightingDevice rWifiDevice rDoorDevice rFitnessDevice target
+
+uGymclient2Atoffice can REACH target
+target is REACHABLE

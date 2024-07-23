@@ -1,0 +1,75 @@
+Counter Example Trace:
+Specification of query: Can uRPS1AnyTime REACH target ?
+
+==> Step 1:
+Target User: uRPS1AnyTime
+CAN ASSIGN rule applied to uRPS1AnyTime: <Admin,rRPS1AnyTime,rCommonDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uRPS1AnyTime before applying rule: rRPS1AnyTime
+Role configuration of uRPS1AnyTime after applying rule: rRPS1AnyTime rCommonDevice
+
+==> Step 2:
+Target User: uRPS1AnyTime
+CAN ASSIGN rule applied to uRPS1AnyTime: <Admin,rRPS1AnyTime&rCommonDevice,rWifiDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uRPS1AnyTime before applying rule: rRPS1AnyTime rCommonDevice
+Role configuration of uRPS1AnyTime after applying rule: rRPS1AnyTime rCommonDevice rWifiDevice
+
+==> Step 3:
+Target User: uRPS1AnyTime
+CAN ASSIGN rule applied to uRPS1AnyTime: <Admin,rRPS1AnyTime,rLightingDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uRPS1AnyTime before applying rule: rRPS1AnyTime rCommonDevice rWifiDevice
+Role configuration of uRPS1AnyTime after applying rule: rRPS1AnyTime rCommonDevice rWifiDevice rLightingDevice
+
+==> Step 4:
+Target User: uRPS1AnyTime
+CAN ASSIGN rule applied to uRPS1AnyTime: <Admin,rRPS1AnyTime&rCommonDevice,rDoorDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uRPS1AnyTime before applying rule: rRPS1AnyTime rCommonDevice rWifiDevice rLightingDevice
+Role configuration of uRPS1AnyTime after applying rule: rRPS1AnyTime rCommonDevice rWifiDevice rLightingDevice rDoorDevice
+
+==> Step 5:
+Target User: uRPS1AnyTime
+CAN ASSIGN rule applied to uRPS1AnyTime: <Admin,rRPS1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice,rFitnessDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uRPS1AnyTime before applying rule: rRPS1AnyTime rCommonDevice rWifiDevice rLightingDevice rDoorDevice
+Role configuration of uRPS1AnyTime after applying rule: rRPS1AnyTime rCommonDevice rWifiDevice rLightingDevice rDoorDevice rFitnessDevice
+
+==> Step 6:
+Target User: uRPS1AnyTime
+CAN REVOKE rule applied to uRPS1AnyTime: <Admin,rDoorDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uRPS1AnyTime before applying rule: rRPS1AnyTime rCommonDevice rWifiDevice rLightingDevice rDoorDevice rFitnessDevice
+Role configuration of uRPS1AnyTime after applying rule: rRPS1AnyTime rCommonDevice rWifiDevice rLightingDevice rFitnessDevice
+
+==> Step 7:
+Target User: uRPS1AnyTime
+CAN REVOKE rule applied to uRPS1AnyTime: <Admin,rWifiDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uRPS1AnyTime before applying rule: rRPS1AnyTime rCommonDevice rWifiDevice rLightingDevice rFitnessDevice
+Role configuration of uRPS1AnyTime after applying rule: rRPS1AnyTime rCommonDevice rLightingDevice rFitnessDevice
+
+==> Step 8:
+Target User: uRPS1AnyTime
+CAN REVOKE rule applied to uRPS1AnyTime: <Admin,rLightingDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uRPS1AnyTime before applying rule: rRPS1AnyTime rCommonDevice rLightingDevice rFitnessDevice
+Role configuration of uRPS1AnyTime after applying rule: rRPS1AnyTime rCommonDevice rFitnessDevice
+
+==> Step 9:
+Target User: uRPS1AnyTime
+CAN REVOKE rule applied to uRPS1AnyTime: <Admin,rCommonDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uRPS1AnyTime before applying rule: rRPS1AnyTime rCommonDevice rFitnessDevice
+Role configuration of uRPS1AnyTime after applying rule: rRPS1AnyTime rFitnessDevice
+
+==> Step 10:
+Target User: uRPS1AnyTime
+CAN ASSIGN rule applied to uRPS1AnyTime: <Admin,rRPS1AnyTime&rFitnessDevice,target>
+Administrative user to invoke the rule: admin
+Role configuration of uRPS1AnyTime before applying rule: rRPS1AnyTime rFitnessDevice
+Role configuration of uRPS1AnyTime after applying rule: rRPS1AnyTime rFitnessDevice target
+
+uRPS1AnyTime can REACH target
+target is REACHABLE

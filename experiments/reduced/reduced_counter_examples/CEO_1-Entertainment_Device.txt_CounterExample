@@ -1,0 +1,47 @@
+Counter Example Trace:
+Specification of query: Can uCEO1AnyTime REACH target ?
+
+==> Step 1:
+Target User: uCEO1AnyTime
+CAN ASSIGN rule applied to uCEO1AnyTime: <Admin,rCEO1AnyTime,rCommonDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uCEO1AnyTime before applying rule: rCEO1AnyTime
+Role configuration of uCEO1AnyTime after applying rule: rCEO1AnyTime rCommonDevice
+
+==> Step 2:
+Target User: uCEO1AnyTime
+CAN ASSIGN rule applied to uCEO1AnyTime: <Admin,rCEO1AnyTime&rCommonDevice,rWifiDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uCEO1AnyTime before applying rule: rCEO1AnyTime rCommonDevice
+Role configuration of uCEO1AnyTime after applying rule: rCEO1AnyTime rCommonDevice rWifiDevice
+
+==> Step 3:
+Target User: uCEO1AnyTime
+CAN ASSIGN rule applied to uCEO1AnyTime: <Admin,rCEO1AnyTime&rCommonDevice,rDoorDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uCEO1AnyTime before applying rule: rCEO1AnyTime rCommonDevice rWifiDevice
+Role configuration of uCEO1AnyTime after applying rule: rCEO1AnyTime rCommonDevice rWifiDevice rDoorDevice
+
+==> Step 4:
+Target User: uCEO1AnyTime
+CAN ASSIGN rule applied to uCEO1AnyTime: <Admin,rCEO1AnyTime,rLightingDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uCEO1AnyTime before applying rule: rCEO1AnyTime rCommonDevice rWifiDevice rDoorDevice
+Role configuration of uCEO1AnyTime after applying rule: rCEO1AnyTime rCommonDevice rWifiDevice rDoorDevice rLightingDevice
+
+==> Step 5:
+Target User: uCEO1AnyTime
+CAN ASSIGN rule applied to uCEO1AnyTime: <Admin,rCEO1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice,rEntertainmentDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uCEO1AnyTime before applying rule: rCEO1AnyTime rCommonDevice rWifiDevice rDoorDevice rLightingDevice
+Role configuration of uCEO1AnyTime after applying rule: rCEO1AnyTime rCommonDevice rWifiDevice rDoorDevice rLightingDevice rEntertainmentDevice
+
+==> Step 6:
+Target User: uCEO1AnyTime
+CAN ASSIGN rule applied to uCEO1AnyTime: <Admin,rCEO1AnyTime&rEntertainmentDevice,target>
+Administrative user to invoke the rule: admin
+Role configuration of uCEO1AnyTime before applying rule: rCEO1AnyTime rCommonDevice rWifiDevice rDoorDevice rLightingDevice rEntertainmentDevice
+Role configuration of uCEO1AnyTime after applying rule: rCEO1AnyTime rCommonDevice rWifiDevice rDoorDevice rLightingDevice rEntertainmentDevice target
+
+uCEO1AnyTime can REACH target
+target is REACHABLE

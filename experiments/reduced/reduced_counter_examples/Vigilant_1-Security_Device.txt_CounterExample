@@ -1,0 +1,61 @@
+Counter Example Trace:
+Specification of query: Can uVigilant1AnyTime REACH target ?
+
+==> Step 1:
+Target User: uVigilant1AnyTime
+CAN ASSIGN rule applied to uVigilant1AnyTime: <Admin,rVigilant1AnyTime,rCommonDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uVigilant1AnyTime before applying rule: rVigilant1AnyTime
+Role configuration of uVigilant1AnyTime after applying rule: rVigilant1AnyTime rCommonDevice
+
+==> Step 2:
+Target User: uVigilant1AnyTime
+CAN ASSIGN rule applied to uVigilant1AnyTime: <Admin,rVigilant1AnyTime&rCommonDevice,rLightingDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uVigilant1AnyTime before applying rule: rVigilant1AnyTime rCommonDevice
+Role configuration of uVigilant1AnyTime after applying rule: rVigilant1AnyTime rCommonDevice rLightingDevice
+
+==> Step 3:
+Target User: uVigilant1AnyTime
+CAN ASSIGN rule applied to uVigilant1AnyTime: <Admin,rVigilant1AnyTime&rCommonDevice,rWifiDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uVigilant1AnyTime before applying rule: rVigilant1AnyTime rCommonDevice rLightingDevice
+Role configuration of uVigilant1AnyTime after applying rule: rVigilant1AnyTime rCommonDevice rLightingDevice rWifiDevice
+
+==> Step 4:
+Target User: uVigilant1AnyTime
+CAN ASSIGN rule applied to uVigilant1AnyTime: <Admin,rVigilant1AnyTime&rCommonDevice,rDoorDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uVigilant1AnyTime before applying rule: rVigilant1AnyTime rCommonDevice rLightingDevice rWifiDevice
+Role configuration of uVigilant1AnyTime after applying rule: rVigilant1AnyTime rCommonDevice rLightingDevice rWifiDevice rDoorDevice
+
+==> Step 5:
+Target User: uVigilant1AnyTime
+CAN ASSIGN rule applied to uVigilant1AnyTime: <Admin,rVigilant1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice,rComputerDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uVigilant1AnyTime before applying rule: rVigilant1AnyTime rCommonDevice rLightingDevice rWifiDevice rDoorDevice
+Role configuration of uVigilant1AnyTime after applying rule: rVigilant1AnyTime rCommonDevice rLightingDevice rWifiDevice rDoorDevice rComputerDevice
+
+==> Step 6:
+Target User: uVigilant1AnyTime
+CAN ASSIGN rule applied to uVigilant1AnyTime: <Admin,rVigilant1AnyTime&rComputerDevice,rAdvancedDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uVigilant1AnyTime before applying rule: rVigilant1AnyTime rCommonDevice rLightingDevice rWifiDevice rDoorDevice rComputerDevice
+Role configuration of uVigilant1AnyTime after applying rule: rVigilant1AnyTime rCommonDevice rLightingDevice rWifiDevice rDoorDevice rComputerDevice rAdvancedDevice
+
+==> Step 7:
+Target User: uVigilant1AnyTime
+CAN ASSIGN rule applied to uVigilant1AnyTime: <Admin,rVigilant1AnyTime&rAdvancedDevice,rSecurityDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uVigilant1AnyTime before applying rule: rVigilant1AnyTime rCommonDevice rLightingDevice rWifiDevice rDoorDevice rComputerDevice rAdvancedDevice
+Role configuration of uVigilant1AnyTime after applying rule: rVigilant1AnyTime rCommonDevice rLightingDevice rWifiDevice rDoorDevice rComputerDevice rAdvancedDevice rSecurityDevice
+
+==> Step 8:
+Target User: uVigilant1AnyTime
+CAN ASSIGN rule applied to uVigilant1AnyTime: <Admin,rVigilant1AnyTime&rSecurityDevice,target>
+Administrative user to invoke the rule: admin
+Role configuration of uVigilant1AnyTime before applying rule: rVigilant1AnyTime rCommonDevice rLightingDevice rWifiDevice rDoorDevice rComputerDevice rAdvancedDevice rSecurityDevice
+Role configuration of uVigilant1AnyTime after applying rule: rVigilant1AnyTime rCommonDevice rLightingDevice rWifiDevice rDoorDevice rComputerDevice rAdvancedDevice rSecurityDevice target
+
+uVigilant1AnyTime can REACH target
+target is REACHABLE

@@ -1,0 +1,110 @@
+Counter Example Trace:
+Specification of query: Can uAdmempl2Atoffice REACH target ?
+
+==> Step 1:
+Target User: uAdmempl2Atoffice
+CAN ASSIGN rule applied to uAdmempl2Atoffice: <Admin,rAdmempl2Atoffice,rCommonDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uAdmempl2Atoffice before applying rule: rAdmempl2Atoffice
+Role configuration of uAdmempl2Atoffice after applying rule: rAdmempl2Atoffice rCommonDevice
+
+==> Step 2:
+Target User: uAdmempl2Atoffice
+CAN ASSIGN rule applied to uAdmempl2Atoffice: <Admin,rAdmempl2Atoffice&rCommonDevice,rDoorDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uAdmempl2Atoffice before applying rule: rAdmempl2Atoffice rCommonDevice
+Role configuration of uAdmempl2Atoffice after applying rule: rAdmempl2Atoffice rCommonDevice rDoorDevice
+
+==> Step 3:
+Target User: uAdmempl2Atoffice
+CAN ASSIGN rule applied to uAdmempl2Atoffice: <Admin,rAdmempl2Atoffice&rCommonDevice,rWifiDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uAdmempl2Atoffice before applying rule: rAdmempl2Atoffice rCommonDevice rDoorDevice
+Role configuration of uAdmempl2Atoffice after applying rule: rAdmempl2Atoffice rCommonDevice rDoorDevice rWifiDevice
+
+==> Step 4:
+Target User: uAdmempl2Atoffice
+CAN ASSIGN rule applied to uAdmempl2Atoffice: <Admin,rAdmempl2Atoffice&rCommonDevice,rLightingDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uAdmempl2Atoffice before applying rule: rAdmempl2Atoffice rCommonDevice rDoorDevice rWifiDevice
+Role configuration of uAdmempl2Atoffice after applying rule: rAdmempl2Atoffice rCommonDevice rDoorDevice rWifiDevice rLightingDevice
+
+==> Step 5:
+Target User: uAdmempl2Atoffice
+CAN REVOKE rule applied to uAdmempl2Atoffice: <Admin,rCommonDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uAdmempl2Atoffice before applying rule: rAdmempl2Atoffice rCommonDevice rDoorDevice rWifiDevice rLightingDevice
+Role configuration of uAdmempl2Atoffice after applying rule: rAdmempl2Atoffice rDoorDevice rWifiDevice rLightingDevice
+
+==> Step 6:
+Target User: uAdmempl2Atoffice
+CAN ASSIGN rule applied to uAdmempl2Atoffice: <Admin,rAdmempl2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice,rComputerDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uAdmempl2Atoffice before applying rule: rAdmempl2Atoffice rDoorDevice rWifiDevice rLightingDevice
+Role configuration of uAdmempl2Atoffice after applying rule: rAdmempl2Atoffice rDoorDevice rWifiDevice rLightingDevice rComputerDevice
+
+==> Step 7:
+Target User: uAdmempl2Atoffice
+CAN ASSIGN rule applied to uAdmempl2Atoffice: <Admin,rAdmempl2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice,rWorkDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uAdmempl2Atoffice before applying rule: rAdmempl2Atoffice rDoorDevice rWifiDevice rLightingDevice rComputerDevice
+Role configuration of uAdmempl2Atoffice after applying rule: rAdmempl2Atoffice rDoorDevice rWifiDevice rLightingDevice rComputerDevice rWorkDevice
+
+==> Step 8:
+Target User: uAdmempl2Atoffice
+CAN REVOKE rule applied to uAdmempl2Atoffice: <Admin,rDoorDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uAdmempl2Atoffice before applying rule: rAdmempl2Atoffice rDoorDevice rWifiDevice rLightingDevice rComputerDevice rWorkDevice
+Role configuration of uAdmempl2Atoffice after applying rule: rAdmempl2Atoffice rWifiDevice rLightingDevice rComputerDevice rWorkDevice
+
+==> Step 9:
+Target User: uAdmempl2Atoffice
+CAN REVOKE rule applied to uAdmempl2Atoffice: <Admin,rWifiDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uAdmempl2Atoffice before applying rule: rAdmempl2Atoffice rWifiDevice rLightingDevice rComputerDevice rWorkDevice
+Role configuration of uAdmempl2Atoffice after applying rule: rAdmempl2Atoffice rLightingDevice rComputerDevice rWorkDevice
+
+==> Step 10:
+Target User: uAdmempl2Atoffice
+CAN REVOKE rule applied to uAdmempl2Atoffice: <Admin,rLightingDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uAdmempl2Atoffice before applying rule: rAdmempl2Atoffice rLightingDevice rComputerDevice rWorkDevice
+Role configuration of uAdmempl2Atoffice after applying rule: rAdmempl2Atoffice rComputerDevice rWorkDevice
+
+==> Step 11:
+Target User: uAdmempl2Atoffice
+CAN ASSIGN rule applied to uAdmempl2Atoffice: <Admin,rAdmempl2Atoffice&rWorkDevice,rBiometricDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uAdmempl2Atoffice before applying rule: rAdmempl2Atoffice rComputerDevice rWorkDevice
+Role configuration of uAdmempl2Atoffice after applying rule: rAdmempl2Atoffice rComputerDevice rWorkDevice rBiometricDevice
+
+==> Step 12:
+Target User: uAdmempl2Atoffice
+CAN ASSIGN rule applied to uAdmempl2Atoffice: <Admin,rAdmempl2Atoffice&rComputerDevice&rWorkDevice&rBiometricDevice,rSafeDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uAdmempl2Atoffice before applying rule: rAdmempl2Atoffice rComputerDevice rWorkDevice rBiometricDevice
+Role configuration of uAdmempl2Atoffice after applying rule: rAdmempl2Atoffice rComputerDevice rWorkDevice rBiometricDevice rSafeDevice
+
+==> Step 13:
+Target User: uAdmempl2Atoffice
+CAN REVOKE rule applied to uAdmempl2Atoffice: <Admin,rComputerDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uAdmempl2Atoffice before applying rule: rAdmempl2Atoffice rComputerDevice rWorkDevice rBiometricDevice rSafeDevice
+Role configuration of uAdmempl2Atoffice after applying rule: rAdmempl2Atoffice rWorkDevice rBiometricDevice rSafeDevice
+
+==> Step 14:
+Target User: uAdmempl2Atoffice
+CAN REVOKE rule applied to uAdmempl2Atoffice: <Admin,rWorkDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uAdmempl2Atoffice before applying rule: rAdmempl2Atoffice rWorkDevice rBiometricDevice rSafeDevice
+Role configuration of uAdmempl2Atoffice after applying rule: rAdmempl2Atoffice rBiometricDevice rSafeDevice
+
+==> Step 15:
+Target User: uAdmempl2Atoffice
+CAN ASSIGN rule applied to uAdmempl2Atoffice: <Admin,rAdmempl2Atoffice&rSafeDevice,target>
+Administrative user to invoke the rule: admin
+Role configuration of uAdmempl2Atoffice before applying rule: rAdmempl2Atoffice rBiometricDevice rSafeDevice
+Role configuration of uAdmempl2Atoffice after applying rule: rAdmempl2Atoffice rBiometricDevice rSafeDevice target
+
+uAdmempl2Atoffice can REACH target
+target is REACHABLE

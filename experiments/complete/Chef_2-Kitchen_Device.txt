@@ -1,0 +1,503 @@
+ROLES
+rCEO1AnyTime rCEO2AnyTime rCEO1NotAtoffice rCEO2NotAtoffice rCEO1EmergencyTime
+rCEO2EmergencyTime rCTOAnyTime
+rRPS1AnyTime rRPS2AnyTime rRPS1EmergencyTime rRPS2EmergencyTime rRPS1NotAtoffice rRPS2NotAtoffice
+rITEManager1Atoffice rITEManager2Atoffice
+rNCEngineer1Atoffice rNCEngineer2Atoffice rESEngineer1Atoffice rESEngineer2Atoffice
+rIT1Atoffice rIT2Atoffice
+rHRManager1Atoffice rHRManager2Atoffice
+rAdmempl1Atoffice rAdmempl2Atoffice
+rReceptionist1Atoffice rReceptionist2Atoffice
+rWaiter1Atoffice rWaiter2Atoffice
+rPT1Atoffice rPT2Atoffice
+rGymclient1Atoffice rGymclient2Atoffice
+rChef1Atoffice rChef2Atoffice
+rGuest1Atoffice rGuest2Atoffice
+rCleaner1Atoffice rCleaner2Atoffice
+rVigilant1Atoffice rVigilant2Atoffice rVigilant1NotAtoffice rVigilant2NotAtoffice rVigilant1EmergencyTime rVigilant2EmergencyTime rVigilant1AnyTime rVigilant2AnyTime
+rEntertainmentDevice rDoorDevice rAdvancedDevice rSafeDevice rBiometricDevice rBiometricControlled rComputerDevice rTabletDevice rFitnessDevice rFitnessPTDevice rGarageDevice rWifiDevice rKitchenDevice rMonitorDevice rSecurityDevice rLightingDevice rCleaningDevice rWorkDevice rCommonDevice rHVACDevices rBMSDevices rMonitorDevice
+target Admin
+;
+
+USERS
+admin
+uCEO1AnyTime uCEO2AnyTime uCEO1NotAtoffice uCEO2NotAtoffice uCEO1EmergencyTime uCTOAnyTime
+uCEO2EmergencyTime
+uRPS1AnyTime uRPS2AnyTime uRPS1EmergencyTime uRPS2EmergencyTime uRPS1NotAtoffice uRPS2NotAtoffice
+uITEManager1Atoffice uITEManager2Atoffice
+uNCEngineer1Atoffice uNCEngineer2Atoffice uESEngineer1Atoffice uESEngineer2Atoffice
+uIT1Atoffice uIT2Atoffice
+uHRManager1Atoffice uHRManager2Atoffice
+uAdmempl1Atoffice uAdmempl2Atoffice
+uReceptionist1Atoffice uReceptionist2Atoffice
+uWaiter1Atoffice uWaiter2Atoffice
+uPT1Atoffice uPT2Atoffice
+uGymclient1Atoffice uGymclient2Atoffice
+uChef1Atoffice uChef2Atoffice
+uGuest1Atoffice uGuest2Atoffice
+uCleaner1Atoffice uCleaner2Atoffice
+uVigilant1Atoffice uVigilant2Atoffice uVigilant1NotAtoffice uVigilant2NotAtoffice uVigilant1EmergencyTime uVigilant2EmergencyTime uVigilant1AnyTime uVigilant2AnyTime
+;
+
+ADMIN
+admin
+;
+
+UA
+<admin,Admin>
+<uCEO1AnyTime,rCEO1AnyTime> <uCEO1NotAtoffice,rCEO1NotAtoffice> <uCEO1EmergencyTime,rCEO1EmergencyTime>
+<uCEO2AnyTime,rCEO2AnyTime> <uCEO2NotAtoffice,rCEO2NotAtoffice> <uCEO2EmergencyTime,rCEO2EmergencyTime>
+<uCTOAnyTime,rCTOAnyTime>
+<uRPS1AnyTime,rRPS1AnyTime> <uRPS1EmergencyTime,rRPS1EmergencyTime> <uRPS1NotAtoffice,rRPS1NotAtoffice>
+<uRPS2AnyTime,rRPS2AnyTime> <uRPS2EmergencyTime,rRPS2EmergencyTime> <uRPS2NotAtoffice,rRPS2NotAtoffice>
+<uITEManager1Atoffice,rITEManager1Atoffice> <uITEManager2Atoffice,rITEManager2Atoffice>
+<uNCEngineer1Atoffice,rNCEngineer1Atoffice> <uNCEngineer2Atoffice,rNCEngineer2Atoffice> <uESEngineer1Atoffice,rESEngineer1Atoffice> <uIT1Atoffice,rIT1Atoffice> <uIT2Atoffice,rIT2Atoffice>
+<uHRManager1Atoffice,rHRManager1Atoffice> <uHRManager2Atoffice,rHRManager2Atoffice>  <uAdmempl1Atoffice,rAdmempl1Atoffice> <uAdmempl2Atoffice,rAdmempl2Atoffice>
+<uReceptionist1Atoffice,rReceptionist1Atoffice> <uReceptionist2Atoffice,rReceptionist2Atoffice>
+<uWaiter1Atoffice,rWaiter1Atoffice> <uWaiter2Atoffice,rWaiter2Atoffice>
+<uPT1Atoffice,rPT1Atoffice> <uPT2Atoffice,rPT2Atoffice>
+<uGymclient1Atoffice,rGymclient1Atoffice>  <uGymclient2Atoffice,rGymclient2Atoffice>
+<uChef1Atoffice,rChef1Atoffice>  <uChef2Atoffice,rChef2Atoffice>
+<uGuest1Atoffice,rGuest1Atoffice> <uGuest2Atoffice,rGuest2Atoffice>
+<uCleaner1Atoffice,rCleaner1Atoffice>  <uCleaner2Atoffice,rCleaner2Atoffice>
+<uVigilant1Atoffice,rVigilant1Atoffice> <uVigilant2Atoffice,rVigilant2Atoffice>  <uVigilant1NotAtoffice,rVigilant1NotAtoffice>
+<uVigilant2NotAtoffice,rVigilant2NotAtoffice>
+<uVigilant1EmergencyTime,rVigilant1EmergencyTime>  <uVigilant2EmergencyTime,rVigilant2EmergencyTime>  <uVigilant1AnyTime,rVigilant1AnyTime>  <uVigilant2AnyTime,rVigilant2AnyTime>
+;
+
+CR
+<Admin,rEntertainmentDevice>
+<Admin,rDoorDevice>
+<Admin,rComputerDevice>
+<Admin,rTabletDevice>
+<Admin,rFitnessDevice>
+<Admin,rGarageDevice>
+<Admin,rWifiDevice>
+<Admin,rLightingDevice>
+<Admin,rWorkDevice>
+<Admin,rCommonDevice>
+<Admin,rEntertainmentDevice>
+<Admin,rDoorDevice>
+<Admin,rComputerDevice>
+<Admin,rTabletDevice>
+<Admin,rFitnessDevice>
+<Admin,rGarageDevice>
+<Admin,rWifiDevice>
+<Admin,rLightingDevice>
+<Admin,rWorkDevice>
+<Admin,rCommonDevice>
+<Admin,rDoorDevice>
+<Admin,rTabletDevice>
+<Admin,rFitnessDevice>
+<Admin,rGarageDevice>
+<Admin,rWifiDevice>
+<Admin,rLightingDevice>
+<Admin,rCommonDevice>
+<Admin,rMonitorDevice>
+<Admin,rKitchenDevice>
+;
+
+CA
+<Admin, rChef2Atoffice&rKitchenDevice, target>
+
+<Admin, rCEO1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin, rCEO1AnyTime&rCommonDevice, rDoorDevice>
+<Admin, rCEO1AnyTime, rCommonDevice>
+<Admin, rCEO1AnyTime&rComputerDevice, rAdvancedDevice>
+<Admin, rCEO1AnyTime&rComputerDevice&rWorkDevice&rBiometricDevice, rSafeDevice>
+<Admin, rCEO1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rCEO1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rCEO1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rCEO1AnyTime&rCommonDevice, rGarageDevice>
+<Admin, rCEO1AnyTime&rCommonDevice, rWifiDevice>
+<Admin, rCEO1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rKitchenDevice>
+<Admin, rCEO1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rMonitorDevice>
+<Admin, rCEO1AnyTime&rAdvancedDevice, rSecurityDevice>
+<Admin, rCEO1AnyTime&rCommonDevice, rLightingDevice>
+<Admin, rCEO1AnyTime&rDoorDevice&rLightingDevice, rCleaningDevice>
+<Admin, rCEO1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin, rCEO1AnyTime,rLightingDevice>
+<Admin, rCEO1AnyTime&rFitnessDevice, rFitnessPTDevice>
+<Admin, rCEO1AnyTime&rWorkDevice, rBiometricDevice>
+<Admin, rCEO2AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin, rCEO2AnyTime&rCommonDevice, rDoorDevice>
+<Admin, rCEO2AnyTime&rComputerDevice, rAdvancedDevice>
+<Admin, rCEO2AnyTime&rComputerDevice&rWorkDevice&rBiometricDevice, rSafeDevice>
+<Admin, rCEO2AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rCEO2AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rCEO2AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rCEO2AnyTime&rCommonDevice, rGarageDevice>
+<Admin, rCEO2AnyTime&rCommonDevice, rWifiDevice>
+<Admin, rCEO2AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rKitchenDevice>
+<Admin, rCEO2AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rMonitorDevice>
+<Admin, rCEO2AnyTime&rAdvancedDevice, rSecurityDevice>
+<Admin, rCEO2AnyTime&rCommonDevice, rLightingDevice>
+<Admin, rCEO2AnyTime&rDoorDevice&rLightingDevice, rCleaningDevice>
+<Admin, rCEO2AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin, rCEO2AnyTime,rLightingDevice>
+<Admin, rCEO2AnyTime&rFitnessDevice, rFitnessPTDevice>
+<Admin, rCEO2AnyTime&rWorkDevice, rBiometricDevice>
+
+<Admin, rRPS1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin, rRPS1AnyTime&rCommonDevice, rDoorDevice>
+<Admin, rRPS1AnyTime, rCommonDevice>
+<Admin, rRPS1AnyTime&rComputerDevice, rAdvancedDevice>
+<Admin, rRPS1AnyTime&rComputerDevice&rWorkDevice&rBiometricDevice, rSafeDevice>
+<Admin, rRPS1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rRPS1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rRPS1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rRPS1AnyTime&rCommonDevice, rGarageDevice>
+<Admin, rRPS1AnyTime&rCommonDevice, rWifiDevice>
+<Admin, rRPS1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rKitchenDevice>
+<Admin, rRPS1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rMonitorDevice>
+<Admin, rRPS1AnyTime&rAdvancedDevice, rSecurityDevice>
+<Admin, rRPS1AnyTime&rCommonDevice, rLightingDevice>
+<Admin, rRPS1EmergencyTime&rDoorDevice&rLightingDevice, rCleaningDevice>
+<Admin, rRPS1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin, rRPS1AnyTime,rLightingDevice>
+<Admin, rRPS1EmergencyTime&rFitnessDevice, rFitnessPTDevice>
+<Admin, rRPS1EmergencyTime&rWorkDevice, rBiometricDevice>
+<Admin, rRPS2AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin, rRPS2AnyTime&rCommonDevice, rDoorDevice>
+<Admin, rRPS2AnyTime&rComputerDevice, rAdvancedDevice>
+<Admin, rRPS2AnyTime&rComputerDevice&rWorkDevice&rBiometricDevice, rSafeDevice>
+<Admin, rRPS2AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rRPS2AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rRPS2AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rRPS2AnyTime&rCommonDevice, rGarageDevice>
+<Admin, rRPS2AnyTime&rCommonDevice, rWifiDevice>
+<Admin, rRPS2AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rKitchenDevice>
+<Admin, rRPS2AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rMonitorDevice>
+<Admin, rRPS2AnyTime&rAdvancedDevice, rSecurityDevice>
+<Admin, rRPS2AnyTime&rCommonDevice, rLightingDevice>
+<Admin, rRPS2EmergencyTime&rDoorDevice&rLightingDevice, rCleaningDevice>
+<Admin, rRPS2AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin, rRPS2AnyTime,rLightingDevice>
+<Admin, rRPS2EmergencyTime&rFitnessDevice, rFitnessPTDevice>
+<Admin, rRPS2EmergencyTime&rWorkDevice, rBiometricDevice>
+
+
+<Admin,rITEManager1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin,rITEManager1Atoffice&rCommonDevice, rDoorDevice>
+<Admin,rITEManager1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin,rITEManager1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin,rITEManager1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin,rITEManager1Atoffice&rCommonDevice, rGarageDevice>
+<Admin,rITEManager1Atoffice&rCommonDevice, rWifiDevice>
+<Admin,rITEManager1Atoffice&rCommonDevice, rLightingDevice>
+<Admin,rITEManager1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin,rITEManager1Atoffice, rCommonDevice>
+
+
+<Admin,rITEManager2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin,rITEManager2Atoffice&rCommonDevice, rDoorDevice>
+<Admin,rITEManager2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin,rITEManager2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin,rITEManager2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin,rITEManager2Atoffice&rCommonDevice, rGarageDevice>
+<Admin,rITEManager2Atoffice&rCommonDevice, rWifiDevice>
+<Admin,rITEManager2Atoffice&rCommonDevice, rLightingDevice>
+<Admin,rITEManager2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin,rITEManager2Atoffice, rCommonDevice>
+
+
+
+<Admin, rNCEngineer1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin, rNCEngineer1Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rNCEngineer1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rNCEngineer1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rNCEngineer1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rNCEngineer1Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rNCEngineer1Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rNCEngineer1Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rNCEngineer1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin, rNCEngineer1Atoffice, rCommonDevice >
+
+<Admin, rNCEngineer2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin, rNCEngineer2Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rNCEngineer2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rNCEngineer2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rNCEngineer2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rNCEngineer2Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rNCEngineer2Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rNCEngineer2Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rNCEngineer2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin, rNCEngineer2Atoffice, rCommonDevice >
+
+
+
+
+
+<Admin, rESEngineer1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin, rESEngineer1Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rESEngineer1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rESEngineer1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rESEngineer1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rESEngineer1Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rESEngineer1Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rESEngineer1Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rESEngineer1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin, rESEngineer1Atoffice, rCommonDevice>
+
+
+<Admin, rESEngineer2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin, rESEngineer2Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rESEngineer2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rESEngineer2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rESEngineer2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rESEngineer2Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rESEngineer2Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rESEngineer2Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rESEngineer2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin, rESEngineer2Atoffice, rCommonDevice>
+
+
+<Admin, rIT1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin, rIT1Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rIT1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rIT1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rIT1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rIT1Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rIT1Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rIT1Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rIT1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin, rIT1Atoffice, rCommonDevice>
+
+
+<Admin, rIT2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin, rIT2Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rIT2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rIT2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rIT2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rIT2Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rIT2Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rIT2Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rIT2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin, rIT2Atoffice, rCommonDevice>
+
+
+
+<Admin, rHRManager1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin, rHRManager1Atoffice&rComputerDevice&rWorkDevice&rBiometricDevice, rSafeDevice>
+
+<Admin, rHRManager1Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rHRManager1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rHRManager1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rHRManager1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rHRManager1Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rHRManager1Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rHRManager1Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rHRManager1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin, rHRManager1Atoffice,rCommonDevice>
+<Admin, rHRManager1Atoffice&rWorkDevice, rBiometricDevice>
+
+
+<Admin, rHRManager2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin, rHRManager2Atoffice&rComputerDevice&rWorkDevice&rBiometricDevice, rSafeDevice>
+
+<Admin, rHRManager2Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rHRManager2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rHRManager2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rHRManager2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rHRManager2Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rHRManager2Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rHRManager2Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rHRManager2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin, rHRManager2Atoffice,rCommonDevice>
+<Admin, rHRManager2Atoffice&rWorkDevice, rBiometricDevice>
+
+
+<Admin, rAdmempl1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin, rAdmempl1Atoffice&rComputerDevice&rWorkDevice&rBiometricDevice, rSafeDevice>
+
+<Admin, rAdmempl1Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rAdmempl1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rAdmempl1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rAdmempl1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rAdmempl1Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rAdmempl1Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rAdmempl1Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rAdmempl1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin, rAdmempl1Atoffice,rCommonDevice>
+<Admin, rAdmempl1Atoffice&rWorkDevice, rBiometricDevice>
+
+
+<Admin, rAdmempl2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin, rAdmempl2Atoffice&rComputerDevice&rWorkDevice&rBiometricDevice, rSafeDevice>
+
+<Admin, rAdmempl2Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rAdmempl2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rAdmempl2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rAdmempl2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rAdmempl2Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rAdmempl2Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rAdmempl2Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rAdmempl2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin, rAdmempl2Atoffice,rCommonDevice>
+<Admin, rAdmempl2Atoffice&rWorkDevice, rBiometricDevice>
+
+
+<Admin, rReceptionist1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin, rReceptionist1Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rReceptionist1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rReceptionist1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rMonitorDevice>
+<Admin, rReceptionist1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rReceptionist1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rReceptionist1Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rReceptionist1Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rReceptionist1Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rReceptionist1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin, rReceptionist1Atoffice,rCommonDevice>
+
+<Admin, rReceptionist2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rEntertainmentDevice>
+<Admin, rReceptionist2Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rReceptionist2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rReceptionist2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rMonitorDevice>
+<Admin, rReceptionist2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rReceptionist2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rReceptionist2Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rReceptionist2Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rReceptionist2Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rReceptionist2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rWorkDevice>
+<Admin, rReceptionist2Atoffice,rCommonDevice>
+
+
+
+<Admin, rWaiter1Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rWaiter1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rWaiter1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rWaiter1Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rWaiter1Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rWaiter1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rKitchenDevice>
+<Admin, rWaiter1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rMonitorDevice>
+<Admin, rWaiter1Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rWaiter1Atoffice,rCommonDevice>
+
+<Admin, rWaiter2Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rWaiter2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rWaiter2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rWaiter2Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rWaiter2Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rWaiter2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rKitchenDevice>
+<Admin, rWaiter2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rMonitorDevice>
+<Admin, rWaiter2Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rWaiter2Atoffice,rCommonDevice>
+
+
+
+
+<Admin, rWaiter1Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rWaiter1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rWaiter1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rWaiter1Atoffice&rFitnessDevice, rFitnessPTDevice>
+<Admin, rWaiter1Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rWaiter1Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rWaiter1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rMonitorDevice>
+<Admin, rWaiter1Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rWaiter1Atoffice,rCommonDevice>
+
+
+<Admin, rWaiter2Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rWaiter2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rWaiter2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rWaiter2Atoffice&rFitnessDevice, rFitnessPTDevice>
+<Admin, rWaiter2Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rWaiter2Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rWaiter2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rMonitorDevice>
+<Admin, rWaiter2Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rWaiter2Atoffice,rCommonDevice>
+
+
+
+
+
+
+<Admin, rGymclient1Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rGymclient1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rGymclient1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rGymclient1Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rGymclient1Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rGymclient1Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rGymclient1Atoffice,rCommonDevice>
+
+
+<Admin, rGymclient2Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rGymclient2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rGymclient2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rGymclient2Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rGymclient2Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rGymclient2Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rGymclient2Atoffice,rCommonDevice>
+
+
+
+
+<Admin, rChef1Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rChef1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rChef1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rChef1Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rChef1Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rChef1Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rChef1Atoffice,rCommonDevice>
+<Admin, rChef1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rKitchenDevice>
+<Admin, rChef1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rMonitorDevice>
+
+<Admin, rChef2Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rChef2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rTabletDevice>
+<Admin, rChef2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rChef2Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rChef2Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rChef2Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rChef2Atoffice,rCommonDevice>
+<Admin, rChef2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rKitchenDevice>
+<Admin, rChef2Atoffice&rDoorDevice&rLightingDevice&rWifiDevice, rMonitorDevice>
+
+
+
+<Admin, rGuest1Atoffice,rCommonDevice>
+<Admin, rGuest2Atoffice,rCommonDevice>
+
+
+<Admin, rVigilant1AnyTime&rCommonDevice,rDoorDevice>
+<Admin, rVigilant1AnyTime&rComputerDevice,rAdvancedDevice>
+<Admin, rVigilant1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rVigilant1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rVigilant1AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rVigilant1AnyTime&rCommonDevice,rGarageDevice>
+<Admin, rVigilant1AnyTime&rCommonDevice,rWifiDevice>
+<Admin, rVigilant1AnyTime&rAdvancedDevice,rSecurityDevice>
+<Admin, rVigilant1AnyTime&rCommonDevice,rLightingDevice>
+<Admin, rVigilant1AnyTime,rCommonDevice>
+
+<Admin, rVigilant2AnyTime&rCommonDevice,rDoorDevice>
+<Admin, rVigilant2AnyTime&rComputerDevice,rAdvancedDevice>
+<Admin, rVigilant2AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rVigilant2AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rComputerDevice>
+<Admin, rVigilant2AnyTime&rDoorDevice&rLightingDevice&rWifiDevice, rFitnessDevice>
+<Admin, rVigilant2AnyTime&rCommonDevice,rGarageDevice>
+<Admin, rVigilant2AnyTime&rCommonDevice,rWifiDevice>
+<Admin, rVigilant2AnyTime&rAdvancedDevice,rSecurityDevice>
+<Admin, rVigilant2AnyTime&rCommonDevice,rLightingDevice>
+<Admin, rVigilant2AnyTime,rCommonDevice>
+
+
+<Admin, rCleaner1Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rCleaner1Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rCleaner1Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rCleaner1Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rCleaner1Atoffice,rCommonDevice>
+
+
+<Admin, rCleaner2Atoffice&rCommonDevice,rDoorDevice>
+<Admin, rCleaner2Atoffice&rCommonDevice,rGarageDevice>
+<Admin, rCleaner2Atoffice&rCommonDevice,rWifiDevice>
+<Admin, rCleaner2Atoffice&rCommonDevice,rLightingDevice>
+<Admin, rCleaner2Atoffice,rCommonDevice>
+
+<Admin, rCTOAnyTime,rDoorDevice>
+<Admin, rCTOAnyTime&rDoorDevice,rLightingDevice>
+<Admin, rCTOAnyTime&rDoorDevice&rLightingDevice,rMonitorDevice>
+<Admin, rCTOAnyTime&rMonitorDevice,rHVACDevices>
+;
+
+SPEC uChef2Atoffice target;

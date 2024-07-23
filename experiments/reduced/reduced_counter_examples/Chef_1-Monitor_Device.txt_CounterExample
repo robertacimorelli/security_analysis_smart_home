@@ -1,0 +1,47 @@
+Counter Example Trace:
+Specification of query: Can uChef1Atoffice REACH target ?
+
+==> Step 1:
+Target User: uChef1Atoffice
+CAN ASSIGN rule applied to uChef1Atoffice: <Admin,rChef1Atoffice,rCommonDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uChef1Atoffice before applying rule: rChef1Atoffice
+Role configuration of uChef1Atoffice after applying rule: rChef1Atoffice rCommonDevice
+
+==> Step 2:
+Target User: uChef1Atoffice
+CAN ASSIGN rule applied to uChef1Atoffice: <Admin,rChef1Atoffice&rCommonDevice,rLightingDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uChef1Atoffice before applying rule: rChef1Atoffice rCommonDevice
+Role configuration of uChef1Atoffice after applying rule: rChef1Atoffice rCommonDevice rLightingDevice
+
+==> Step 3:
+Target User: uChef1Atoffice
+CAN ASSIGN rule applied to uChef1Atoffice: <Admin,rChef1Atoffice&rCommonDevice,rWifiDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uChef1Atoffice before applying rule: rChef1Atoffice rCommonDevice rLightingDevice
+Role configuration of uChef1Atoffice after applying rule: rChef1Atoffice rCommonDevice rLightingDevice rWifiDevice
+
+==> Step 4:
+Target User: uChef1Atoffice
+CAN ASSIGN rule applied to uChef1Atoffice: <Admin,rChef1Atoffice&rCommonDevice,rDoorDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uChef1Atoffice before applying rule: rChef1Atoffice rCommonDevice rLightingDevice rWifiDevice
+Role configuration of uChef1Atoffice after applying rule: rChef1Atoffice rCommonDevice rLightingDevice rWifiDevice rDoorDevice
+
+==> Step 5:
+Target User: uChef1Atoffice
+CAN ASSIGN rule applied to uChef1Atoffice: <Admin,rChef1Atoffice&rDoorDevice&rLightingDevice&rWifiDevice,rMonitorDevice>
+Administrative user to invoke the rule: admin
+Role configuration of uChef1Atoffice before applying rule: rChef1Atoffice rCommonDevice rLightingDevice rWifiDevice rDoorDevice
+Role configuration of uChef1Atoffice after applying rule: rChef1Atoffice rCommonDevice rLightingDevice rWifiDevice rDoorDevice rMonitorDevice
+
+==> Step 6:
+Target User: uChef1Atoffice
+CAN ASSIGN rule applied to uChef1Atoffice: <Admin,rChef1Atoffice&rMonitorDevice,target>
+Administrative user to invoke the rule: admin
+Role configuration of uChef1Atoffice before applying rule: rChef1Atoffice rCommonDevice rLightingDevice rWifiDevice rDoorDevice rMonitorDevice
+Role configuration of uChef1Atoffice after applying rule: rChef1Atoffice rCommonDevice rLightingDevice rWifiDevice rDoorDevice rMonitorDevice target
+
+uChef1Atoffice can REACH target
+target is REACHABLE
